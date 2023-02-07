@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel ="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id ="header">
+        <a href="#" class="logo">ANUSHKA SINGH</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">contact</a></li>
+
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+        
+    </section>
+    <div class="sec">
+        <h2>Landing page</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate risus nunc, non efficitur tortor pharetra sit amet. Quisque nec orci scelerisque, iaculis nulla vel, bibendum massa. Praesent a rhoncus mauris. Maecenas malesuada enim non turpis viverra suscipit. Praesent volutpat lorem sed quam fringilla dignissim. Sed pulvinar quam sagittis leo placerat malesuada. Donec elit tellus, maximus accumsan lobortis ac, fermentum eget erat. Donec ante leo, fringilla consequat finibus et, venenatis et orci. Maecenas ut orci eu justo ultrices tempor sed in ex. Quisque a dignissim quam. Donec dignissim nulla non varius maximus. Phasellus congue, arcu vel auctor convallis, lacus mauris semper nibh, vitae mollis dui ligula varius dui. Proin quis rhoncus tortor, quis commodo risus. Vivamus sit amet risus est. Nulla pharetra nibh eu augue rhoncus tincidunt.<br><br>
+            Nunc dignissim varius tempor. Aliquam feugiat felis justo, nec finibus odio placerat vel. Phasellus vel leo nec tortor luctus molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ac mauris sed lectus aliquam rutrum. Proin porta eget urna eu convallis. Praesent ac eros rhoncus, convallis magna dictum, aliquam massa. Phasellus feugiat nisi non pulvinar vestibulum. Nam non justo orci. Nullam interdum aliquet dapibus. Fusce eget consequat felis. Phasellus in ligula a ante lacinia bibendum sit amet vitae felis.<br><br>
+            Aenean faucibus, diam quis faucibus consectetur, nisl elit malesuada nibh, at porttitor augue justo eu ligula. Phasellus ullamcorper, metus ut lacinia hendrerit, ligula magna elementum mauris, id tincidunt dolor arcu eget dui. Nulla facilisi. Sed laoreet lorem odio, ut tempor metus ornare maximus. Aliquam non tellus a dolor porta egestas. Suspendisse potenti. Quisque congue sodales leo, eu posuere sem imperdiet mollis. Phasellus a tristique ligula, aliquam elementum ante. Pellentesque commodo nisl vel dolor maximus venenatis.<br><br>
+
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sed efficitur sapien. Fusce eget convallis sem, hendrerit pretium lectus. Morbi molestie porta felis quis sodales. Sed tincidunt leo vitae eros sodales iaculis ac eu nibh. Ut dictum porttitor faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tellus non magna posuere pulvinar. In faucibus pretium nulla a imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>
+            
+            Nunc ligula lorem, facilisis ut turpis eget, bibendum vestibulum magna. In vel placerat neque, sed sagittis nulla. Aliquam tincidunt turpis eu facilisis congue. Quisque non purus et neque fermentum fermentum a ut erat. Nullam non augue eu quam viverra hendrerit. Aenean elementum dignissim tincidunt. Sed feugiat at mi eu consectetur.</p>
+    </div>
+    <script>
+        let text= document.getElementById('text');
+        let bird1= document.getElementById('bird1');
+        let bird2= document.getElementById('bird2');
+        let btn= document.getElementById('btn');
+        let forest= document.getElementById('forest');
+        let rocks= document.getElementById('rocks');
+        let water= document.getElementById('water');
+        let header= document.getElementById('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            
+            text.style.top= 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5  + 'px';
+        })
+
+    </script>
+    
+</body>
+</html>
